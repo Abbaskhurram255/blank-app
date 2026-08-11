@@ -1,6 +1,10 @@
+import pandas as pd
+import plotly.express as px
 import streamlit as st
+
+gapm = px.data.gapminder()
 
 st.title("🎈 My new app")
 st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+    gapm
 )
